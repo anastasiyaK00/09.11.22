@@ -1,4 +1,8 @@
-﻿void FillArray(int[] collection)
+﻿/*Требуется найти одномерный массив array из n элементов, 
+требуется найти элемент массива, равный find 
+*/
+
+void FillArray(int[] collection)
 {
     int Length = collection.Length;
     int index = 0;
@@ -40,11 +44,12 @@ int IndexOf(int[] collection, int find)
 int[] array = new int[10]; //Определили массив из 10 эллементов
 
 FillArray(array); // Заполнил массив
-array[4]=4;
-array[6]=4;
+//array[4]=4; //Добавляем свои цифры на какие-то позиции
+//array[6]=4;
 
 PrintArray(array); //Распечатал массив
 Console.WriteLine();
 
-int pos = IndexOf(array, 443);
+int pos = IndexOf(array, 3);
 Console.WriteLine(pos);
+
